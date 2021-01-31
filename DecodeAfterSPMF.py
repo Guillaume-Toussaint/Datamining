@@ -1,4 +1,8 @@
-# Usage
+#
+#Fichier tiré du TP de Data Mining
+#On se sert de ce fichier post traitement pour ensuite le translittérer dans un fichier lisible
+
+ #Usage
 # python DecodeAfterSPMF.py fich-a-decoder fich-resultat
 #
 import sys
@@ -22,7 +26,7 @@ else:
     f_out="res_decode.txt"
 res=open(f_out,'w')
 
-    
+
 # Construction du dictionnaire
 dic = open('invdico.dbm', 'rb')
 invdico = pickle.load(dic)
@@ -43,7 +47,5 @@ for l in f.readlines():
         rdec1=decode(aa[1])
         res.write(rdec0 +'==> '+ rdec1 +'# '+'# '.join(r[1:])+'\n')
     else:
-        print('!!!!! ligne non conforme')
+        print('Format de ligne incorrect')
 res.close()
-    
-    

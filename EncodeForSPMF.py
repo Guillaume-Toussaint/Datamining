@@ -1,8 +1,10 @@
 #
-# Usage : python <File-to-encode> <encoded-file>
-# Usage : python <File-to-encode> (ecriture dans out.txt)
-#
-#
+
+#Fichier tiré du TP de Data Mining
+
+# Utilisation : python <File-to-encode> <encoded-file>
+# Utilisation : python <File-to-encode> (ecriture dans out.txt)
+
 
 import sys
 import pickle
@@ -47,8 +49,8 @@ for line in f.readlines():
         l.append(dico[a])
     l.sort()
     l2=[str(i) for i in l]
-    
-    
+
+
 #    input("xxx :")
 #    out.write
     #out.write("{"+",".join(l2)+"}")

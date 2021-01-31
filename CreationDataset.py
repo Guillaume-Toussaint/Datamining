@@ -1,4 +1,4 @@
-
+#Pour utiliser ce fichier, il faut simplement l'exécuter
 
 
 data = open("GrandEst",'r') ## Le dataset doit s'appeler GrandEst et se trovuer dans le répertoire courant.
@@ -8,6 +8,7 @@ data = open("GrandEst",'r') ## Le dataset doit s'appeler GrandEst et se trovuer 
 cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DIPL_15","ETUD","HLML","ILETUU","ILTUU","INAI","INFAM","MOCO"
             , "NBPI","NPERR","RECH","SANI","STOCD","SURF","TRANS"] #### Noms ds colonnes qui intéressent
 
+#On récupère la première ligne : les headers
 cols = data.readline()
 
 

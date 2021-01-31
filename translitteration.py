@@ -1,13 +1,13 @@
 import sys
 
-
+#Noms des colonnes pour les afficher
 cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DIPL_15","ETUD","HLML","ILETUU","ILTUU","INAI","INFAM","MOCO"
             , "NBPI","NPERR","RECH","SANI","STOCD","SURF","TRANS"]
 
 #fichier_itemsets_traduits = open("res_decode.txt",'r')#open(sys.argv[1],'r')
 
 
-
+##Section pour déterminer les entrées et sorties du programme
 nameinput = "res_decode.txt"
 fichier_itemsets_traduits = None
 if len(sys.argv)>1:
@@ -28,7 +28,7 @@ else:
     out = open(namefile,'wt')
 
 
-
+#Boucle de translittération des numéros de colonnes en leur code
 for i in fichier_itemsets_traduits.readlines():
     #print("ligne en cours : ",i)
     if i.strip()!="":##Cas une ligne sur 2
