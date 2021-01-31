@@ -6,21 +6,15 @@ import pickle
 
 
 def decode(a):
-#    print invdico
     list=a.split(' ')
     s=""
- #   print list
+
     for i in list:
- #       print "xxx"+i+"xxxx"
         if i!='' and int(i) in invdico.keys():
- #           print "oui"
             s=s+invdico[int(i)]+' '
- #   print "s"
- #   print s
     return s
 
 p=len(sys.argv)
-#print p
 
 if p==3:
     f_out=sys.argv[2]

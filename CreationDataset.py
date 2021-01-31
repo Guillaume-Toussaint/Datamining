@@ -1,6 +1,9 @@
 
-data = open("GrandEst",'r')
-data2 = data
+
+
+data = open("GrandEst",'r') ## Le dataset doit s'appeler GrandEst et se trovuer dans le répertoire courant.
+
+
 #Noms des colonnes que nous allons garder
 cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DIPL_15","ETUD","HLML","ILETUU","ILTUU","INAI","INFAM","MOCO"
             , "NBPI","NPERR","RECH","SANI","STOCD","SURF","TRANS"] #### Noms ds colonnes qui intéressent

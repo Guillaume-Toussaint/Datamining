@@ -5,7 +5,6 @@
 
 ## Prérequis
 
-- Un outil capable de lire les notebooks python (ex : jupyter)
 - Une installation de python3
 - Une installation du JRE
 
@@ -13,9 +12,9 @@
 ## Jeu de données
 
 Nous avons décidé pour ce projet de simplifier le jeu de données Grand Est pour qu'il corresponde à l'utilisation que l'on souhaite en faire.
-Pour cela, nous avons réalisé un notebook python qui permet cette transformation, et qui peut servir à effectuer divers traitements sur le jeu de données.
+Pour cela, nous avons réalisé un programme python qui permet cette transformation et qui peut servir à effectuer divers traitements sur le jeu de données.
 
-Pour transformer le jeu de données en jeu de données réduit, il suffit d'exécuter les blocs de code présents dans le notebook **en ayant le fichier de données Grand Est dans le répertoire dans lequel se trouve le notebook**. En conséquence, le fichier passe d'unt taille de 400 Mo à seulement 72 Mo.
+Pour transformer le jeu de données en jeu de données réduit, il suffit donc d'exécuter le programme CreationDataset.py **en ayant le fichier de données Grand Est dans le répertoire dans lequel se trouve le notebook**. En conséquence, le fichier passe d'unt taille de 400 Mo à seulement 72 Mo.
 
 ## Encodage pour SPMF
 
