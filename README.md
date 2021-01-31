@@ -21,8 +21,8 @@ Pour transformer le jeu de données en jeu de données réduit, il suffit d'exé
 
 Pour transformer ce jeu de données en un fichier exploitable par SPMF, nous avons utilisé le programme fourni durant l'un des TP de ce cours.
 Pour l'utiliser, il suffit d'exécuter la commande suivante dans un terminal :
-`python EncodeForSpmf.py data.txt pour_spmf.txt` sur Windows
-`python3 EncodeForSpmf.py data.txt pour_spmf.txt` sur Linux
+- "python EncodeForSpmf.py data.txt pour_spmf.txt" sur Windows
+- "python3 EncodeForSpmf.py data.txt pour_spmf.txt" sur Linux
 
 Faire ceci nous donne un jeu de données plus important, car le programme transforme les attributs multivalués du jeu de donénes de départ en plusieurs colonnes de valeurs booléennes.
 En effet, le jeu de données passe à une taille de 92Mo.
@@ -37,8 +37,8 @@ Dans un premier temps, on sélectionne l'agorithme FPGrowth_itemsets. On défini
 
 Une fois l'utilisation de SPMF terminée, on exécute une des commande suivante dans un terminal :
 
-`python DecodeAfterSpmf.py <X> ` sur Windows
-`python3 DecodeAfterSpmf.py <X>` sur Linux
+- "python DecodeAfterSpmf.py <X> " sur Windows
+- "python3 DecodeAfterSpmf.py <X>" sur Linux
 DecodeAfterSpmf.py est là aussi un fichier récupéré d'un des TP de ce cours.
 
 Ce programme crée un fichier res_decode.txt qui contient les itemsets ou règles d'associations issues du fichiers SPMF dans le format <Numéro de l'attribut>-<valeur de l'attribut>.
@@ -50,8 +50,8 @@ Ainsi, nous savons quelle valeur sur quelle colonne fait partie de l'itemset ou 
 
 Pour que les résultats de l'exploration de données soient plus lisibles, on utilise le programme translitteration.py de la manière suivante :
 
-`python translitteration.py res_decode.txt <Y>` sur Windows
-`python3 translitteration.py res_decode.txt <Y>` sur Linux
+- "python translitteration.py res_decode.txt <Y>" sur Windows
+- "python3 translitteration.py res_decode.txt <Y>" sur Linux
 
 Ici, `<Y>` est le nom du fichier texte de sortie. S'il n'est pas précisé, un fichier par défaut "itemsets-regles_exploitables.txt" est créé.
 
