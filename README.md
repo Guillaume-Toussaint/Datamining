@@ -37,8 +37,8 @@ Dans un premier temps, on sélectionne l'agorithme FPGrowth_itemsets. On défini
 
 Une fois l'utilisation de SPMF terminée, on exécute une des commande suivante dans un terminal :
 
-- "**python DecodeAfterSpmf.py <X>** " sur Windows
-- "**python3 DecodeAfterSpmf.py <X>**" sur Linux
+- "**python DecodeAfterSpmf.py `<X>`** " sur Windows
+- "**python3 DecodeAfterSpmf.py `<X>`**" sur Linux
 DecodeAfterSpmf.py est là aussi un fichier récupéré d'un des TP de ce cours.
 
 Ce programme crée un fichier res_decode.txt qui contient les itemsets ou règles d'associations issues du fichiers SPMF dans le format <Numéro de l'attribut>-<valeur de l'attribut>.
