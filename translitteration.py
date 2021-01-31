@@ -1,7 +1,7 @@
 import sys
 
 
-cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DEIPL_15","ETUD","HLML","ILETUU","ILTUU","INAI","INFAM","MOCO"
+cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DIPL_15","ETUD","HLML","ILETUU","ILTUU","INAI","INFAM","MOCO"
             , "NBPI","NPERR","RECH","SANI","STOCD","SURF","TRANS"]
 
 #fichier_itemsets_traduits = open("res_decode.txt",'r')#open(sys.argv[1],'r')
@@ -45,13 +45,13 @@ for i in fichier_itemsets_traduits.readlines():
                 index_col = int(j.split("-")[0].strip())
                 #print("index : ",index_col)
                 #print("type : ",type(index_col),"  len : ",len(j.split("-")[0].strip()))
-            
+
                 out.write(cols_noms[index_col]+'-'+j.split("-")[1]+" ")
 
             if association_rules:
                 out.write("==> ")
                 association_rules = False
-                    
+
         out.write("#"+i.split("#")[1])
         if len(i.split("#"))>2:#Confiance en plus dans le fichier txt
             out.write("#"+i.split("#")[2])
