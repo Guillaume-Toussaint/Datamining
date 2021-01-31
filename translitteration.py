@@ -10,7 +10,7 @@ cols_noms = ["AGER20","ANEMR","APAF","ASCEN","CATL","CMBL","COUPLE","CS1","DEIPL
 
 nameinput = "res_decode.txt"
 fichier_itemsets_traduits = None
-if sys.argv[1]:
+if len(sys.argv)>1:
     fichier_itemsets_traduits = open(sys.argv[1],'r')
 else:
     fichier_itemsets_traduits = open(nameinput,'r')
@@ -22,7 +22,7 @@ else:
 
 namefile = "itemsets-regles_exploitables.txt"
 out = None
-if sys.argv[2]:
+if len(sys.argv)>2:
     out = open(sys.argv[2],'wt')
 else:
     out = open(namefile,'wt')
@@ -33,14 +33,14 @@ for i in fichier_itemsets_traduits.readlines():
     #print("ligne en cours : ",i)
     if i.strip()!="":##Cas une ligne sur 2
         itemset = i.split("#")[0].strip()
-        print("Itemset : ",itemset)
+        #print("Itemset : ",itemset)
         association_rules = False
         if "==>" in itemset:
             print("association rule")
             association_rules = True
         for k in itemset.split(" ==> "):
             for j in k.split(" "):
-                print(j,"  ",len(j))
+                #print(j,"  ",len(j))
                 j = j.strip()
                 index_col = int(j.split("-")[0].strip())
                 #print("index : ",index_col)
@@ -53,7 +53,7 @@ for i in fichier_itemsets_traduits.readlines():
                 association_rules = False
                     
         out.write("#"+i.split("#")[1])
-        if i.split("#")[2]:
+        if len(i.split("#"))>2:#Confiance en plus dans le fichier txt
             out.write("#"+i.split("#")[2])
         out.write("\n")
     out.flush()
