@@ -50,8 +50,9 @@ Ainsi, nous savons quelle valeur sur quelle colonne fait partie de l'itemset ou 
 
 Pour que les résultats de l'exploration de données soient plus lisibles, on utilise le programme translitteration.py de la manière suivante :
 
-`python DecodeAfterSpmf.py res_decode.txt <Y>` sur Windows
-`python3 DecodeAfterSpmf.py res_decode.txt <Y>` sur Linux
-Avec <Y> le nom du fichier texte de sortie. S'il n'est pas précisé, un fichier par défaut "itemsets-regles_exploitables.txt" est créé.
+`python translitteration.py res_decode.txt <Y>` sur Windows
+`python3 translitteration.py res_decode.txt <Y>` sur Linux
+
+Ici, `<Y>` est le nom du fichier texte de sortie. S'il n'est pas précisé, un fichier par défaut "itemsets-regles_exploitables.txt" est créé.
 
 Ce fichier contient les mêmes informations que le fichier créé après exécution du programme DecodeAfterSpmf.py, mais dont les numéros de colonnes sont rempalcés par leurs sigles, de sorte à ce que les règles d'association et itemsets trouvés soient facilement compréhensible par un lecteur.
